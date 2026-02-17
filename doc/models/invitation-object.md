@@ -1,0 +1,60 @@
+
+# Invitation Object
+
+Response from a invitation request
+
+## Structure
+
+`InvitationObject`
+
+## Fields
+
+| Name | Type | Tags | Description | Getter | Setter |
+|  --- | --- | --- | --- | --- | --- |
+| `Token` | `String` | Optional | [Token](#/rest/models/structures/token) representing the resource | String getToken() | setToken(String token) |
+| `PortalId` | `String` | Optional | Reference ID in the PayQuicker Hosted Portal, if applicable.<br><br>**Constraints**: *Minimum Length*: `5`, *Maximum Length*: `100` | String getPortalId() | setPortalId(String portalId) |
+| `Amount` | `Double` | Optional | Allocated money to be sent in the transaction.<br><br>**Default**: `1.02d` | Double getAmount() | setAmount(Double amount) |
+| `ClientPaymentId` | `String` | Optional | Unique value provided by the client for the [payment](page:resources/payments), utilized for reference and deduplication.<br><br>**Default**: `"d4b6f130-1d1c-4ce2-903a-0c1ad128f55e"` | String getClientPaymentId() | setClientPaymentId(String clientPaymentId) |
+| `Created` | `LocalDateTime` | Optional | Time object was [created](#/rest/models/structures/created-on) | LocalDateTime getCreated() | setCreated(LocalDateTime created) |
+| `Currency` | [`Currencies`](../../doc/models/currencies.md) | Optional | [Currency code type](#/rest/models/structures/country) for the object<br><br>**Default**: `Currencies.USD` | Currencies getCurrency() | setCurrency(Currencies currency) |
+| `DestinationToken` | `String` | Optional | Unique identifier representing the [destination of funds](#/rest/models/structures/destination-token)<br><br>**Default**: `"dest-631b200f-665d-4dbe-bd01-3063c9dec97d"`<br><br>**Constraints**: *Minimum Length*: `41`, *Maximum Length*: `41`, *Pattern*: `^(acct\|dest\|user)-[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}$` | String getDestinationToken() | setDestinationToken(String destinationToken) |
+| `ProgramUserId` | `String` | Optional | [Program identifier](#/rest/models/structures/program-user-id) for the user<br><br>**Constraints**: *Minimum Length*: `5`, *Maximum Length*: `100` | String getProgramUserId() | setProgramUserId(String programUserId) |
+| `Email` | `String` | Optional | Contact [email address](#/rest/models/structures/email-address) for the user account for the user account<br><br>**Constraints**: *Minimum Length*: `8`, *Maximum Length*: `100`, *Pattern*: `^.+@.+\..+` | String getEmail() | setEmail(String email) |
+| `Memo` | `String` | Optional | Optional internal [memo](#/rest/models/structures/memo) not visible to the user | String getMemo() | setMemo(String memo) |
+| `Note` | `String` | Optional | [Optional comments](#/rest/models/structures/notes) visible to the user | String getNote() | setNote(String note) |
+| `Purpose` | [`PaymentPurposes`](../../doc/models/payment-purposes.md) | Optional | Used to identify the [purpose of a payment](#/models/structures/payment-object) and impacts reporting and calculated taxable earnings (if utilizing tax services) | PaymentPurposes getPurpose() | setPurpose(PaymentPurposes purpose) |
+| `SourceToken` | `String` | Optional | Unique identifier representing the [source of funds](#/rest/models/structures/source-token)<br><br>**Default**: `"acct-3908ab5a-6ce1-474d-8b80-a63a7b147860"`<br><br>**Constraints**: *Minimum Length*: `41`, *Maximum Length*: `41`, *Pattern*: `^(acct\|user\|dest)-[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}$` | String getSourceToken() | setSourceToken(String sourceToken) |
+| `Status` | [`TransferStatuses`](../../doc/models/transfer-statuses.md) | Optional | Current status of a [transfer](#/rest/models/structures/transfer) | TransferStatuses getStatus() | setStatus(TransferStatuses status) |
+| `ReceiptToken` | `String` | Optional | Auto-generated unique identifier representing a receipt, prefixed with `rcpt-`.<br><br>**Default**: `"rcpt-b7fda294-8d3a-48e8-9a11-ef7be07a732c"`<br><br>**Constraints**: *Minimum Length*: `41`, *Maximum Length*: `41`, *Pattern*: `^rcpt-[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}$` | String getReceiptToken() | setReceiptToken(String receiptToken) |
+| `Links` | [`List<HateoasSelfRef>`](../../doc/models/hateoas-self-ref.md) | Optional | **Constraints**: *Minimum Items*: `1`, *Maximum Items*: `10`, *Unique Items Required* | List<HateoasSelfRef> getLinks() | setLinks(List<HateoasSelfRef> links) |
+
+## Example (as JSON)
+
+```json
+{
+  "token": "string",
+  "portalId": "tjvbh",
+  "amount": 1.02,
+  "clientPaymentId": "d4b6f130-1d1c-4ce2-903a-0c1ad128f55e",
+  "created": "2026-02-07T22:23:09.9667010Z",
+  "currency": "USD",
+  "destinationToken": "dest-631b200f-665d-4dbe-bd01-3063c9dec97d",
+  "programUserId": "pdekt",
+  "email": "john.doe@email.com",
+  "memo": "string",
+  "note": "string",
+  "purpose": "BONUS",
+  "sourceToken": "acct-3908ab5a-6ce1-474d-8b80-a63a7b147860",
+  "status": "ACCEPTED",
+  "receiptToken": "rcpt-b7fda294-8d3a-48e8-9a11-ef7be07a732c",
+  "links": [
+    {
+      "href": "string",
+      "params": {
+        "rel": "self"
+      }
+    }
+  ]
+}
+```
+

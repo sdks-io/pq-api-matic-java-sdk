@@ -1,0 +1,1919 @@
+/*
+ * PayQuickerSDK
+ *
+ * This file was automatically generated for PayQuicker by APIMATIC v3.0 ( https://www.apimatic.io ).
+ */
+
+package com.mypayquicker.api.models;
+
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonSetter;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.mypayquicker.api.DateTimeHelper;
+import io.apimatic.core.types.BaseModel;
+import java.time.LocalDateTime;
+import java.util.List;
+
+/**
+ * This is a model class for UserObject type.
+ */
+public class UserObject
+        extends BaseModel {
+    private String token;
+    private String addressLine1;
+    private String addressLine2;
+    private String addressLine3;
+    private String businessAddressLine1;
+    private String businessAddressLine2;
+    private String businessAddressLine3;
+    private Addresses businessAddressType;
+    private String businessCity;
+    private BusinessContactRoles businessContactRole;
+    private Countries businessCountry;
+    private String businessName;
+    private String businessPostalCode;
+    private String businessRegion;
+    private String city;
+    private Countries country;
+    private Countries countryOfBirth;
+    private Countries countryOfNationality;
+    private LocalDateTime createdOn;
+    private Currencies currency;
+    private LocalDateTime dateOfBirth;
+    private String email;
+    private String employerId;
+    private String firstName;
+    private Genders gender;
+    private String governmentId;
+    private GovernmentIds governmentIdType;
+    private Languages language;
+    private String lastName;
+    private String mailingAddressLine1;
+    private String mailingAddressLine2;
+    private String mailingAddressLine3;
+    private String mailingCity;
+    private Countries mailingCountry;
+    private String mailingPostalCode;
+    private String mailingRegion;
+    private String mobileNumber;
+    private Countries mobileNumberCountry;
+    private String occupationTitle;
+    private Occupations occupationType;
+    private String phoneNumber;
+    private Countries phoneNumberCountry;
+    private String postalCode;
+    private String programUserId;
+    private String region;
+    private UserStatuses status;
+    private TaxResidentStatuses taxResidentStatus;
+    private UserTypes userType;
+    private List<HateoasSelfRef> links;
+
+    /**
+     * Default constructor.
+     */
+    public UserObject() {
+        currency = Currencies.USD;
+    }
+
+    /**
+     * Initialization constructor.
+     * @param  token  String value for token.
+     * @param  addressLine1  String value for addressLine1.
+     * @param  addressLine2  String value for addressLine2.
+     * @param  addressLine3  String value for addressLine3.
+     * @param  businessAddressLine1  String value for businessAddressLine1.
+     * @param  businessAddressLine2  String value for businessAddressLine2.
+     * @param  businessAddressLine3  String value for businessAddressLine3.
+     * @param  businessAddressType  Addresses value for businessAddressType.
+     * @param  businessCity  String value for businessCity.
+     * @param  businessContactRole  BusinessContactRoles value for businessContactRole.
+     * @param  businessCountry  Countries value for businessCountry.
+     * @param  businessName  String value for businessName.
+     * @param  businessPostalCode  String value for businessPostalCode.
+     * @param  businessRegion  String value for businessRegion.
+     * @param  city  String value for city.
+     * @param  country  Countries value for country.
+     * @param  countryOfBirth  Countries value for countryOfBirth.
+     * @param  countryOfNationality  Countries value for countryOfNationality.
+     * @param  createdOn  LocalDateTime value for createdOn.
+     * @param  currency  Currencies value for currency.
+     * @param  dateOfBirth  LocalDateTime value for dateOfBirth.
+     * @param  email  String value for email.
+     * @param  employerId  String value for employerId.
+     * @param  firstName  String value for firstName.
+     * @param  gender  Genders value for gender.
+     * @param  governmentId  String value for governmentId.
+     * @param  governmentIdType  GovernmentIds value for governmentIdType.
+     * @param  language  Languages value for language.
+     * @param  lastName  String value for lastName.
+     * @param  mailingAddressLine1  String value for mailingAddressLine1.
+     * @param  mailingAddressLine2  String value for mailingAddressLine2.
+     * @param  mailingAddressLine3  String value for mailingAddressLine3.
+     * @param  mailingCity  String value for mailingCity.
+     * @param  mailingCountry  Countries value for mailingCountry.
+     * @param  mailingPostalCode  String value for mailingPostalCode.
+     * @param  mailingRegion  String value for mailingRegion.
+     * @param  mobileNumber  String value for mobileNumber.
+     * @param  mobileNumberCountry  Countries value for mobileNumberCountry.
+     * @param  occupationTitle  String value for occupationTitle.
+     * @param  occupationType  Occupations value for occupationType.
+     * @param  phoneNumber  String value for phoneNumber.
+     * @param  phoneNumberCountry  Countries value for phoneNumberCountry.
+     * @param  postalCode  String value for postalCode.
+     * @param  programUserId  String value for programUserId.
+     * @param  region  String value for region.
+     * @param  status  UserStatuses value for status.
+     * @param  taxResidentStatus  TaxResidentStatuses value for taxResidentStatus.
+     * @param  userType  UserTypes value for userType.
+     * @param  links  List of HateoasSelfRef value for links.
+     */
+    public UserObject(
+            String token,
+            String addressLine1,
+            String addressLine2,
+            String addressLine3,
+            String businessAddressLine1,
+            String businessAddressLine2,
+            String businessAddressLine3,
+            Addresses businessAddressType,
+            String businessCity,
+            BusinessContactRoles businessContactRole,
+            Countries businessCountry,
+            String businessName,
+            String businessPostalCode,
+            String businessRegion,
+            String city,
+            Countries country,
+            Countries countryOfBirth,
+            Countries countryOfNationality,
+            LocalDateTime createdOn,
+            Currencies currency,
+            LocalDateTime dateOfBirth,
+            String email,
+            String employerId,
+            String firstName,
+            Genders gender,
+            String governmentId,
+            GovernmentIds governmentIdType,
+            Languages language,
+            String lastName,
+            String mailingAddressLine1,
+            String mailingAddressLine2,
+            String mailingAddressLine3,
+            String mailingCity,
+            Countries mailingCountry,
+            String mailingPostalCode,
+            String mailingRegion,
+            String mobileNumber,
+            Countries mobileNumberCountry,
+            String occupationTitle,
+            Occupations occupationType,
+            String phoneNumber,
+            Countries phoneNumberCountry,
+            String postalCode,
+            String programUserId,
+            String region,
+            UserStatuses status,
+            TaxResidentStatuses taxResidentStatus,
+            UserTypes userType,
+            List<HateoasSelfRef> links) {
+        this.token = token;
+        this.addressLine1 = addressLine1;
+        this.addressLine2 = addressLine2;
+        this.addressLine3 = addressLine3;
+        this.businessAddressLine1 = businessAddressLine1;
+        this.businessAddressLine2 = businessAddressLine2;
+        this.businessAddressLine3 = businessAddressLine3;
+        this.businessAddressType = businessAddressType;
+        this.businessCity = businessCity;
+        this.businessContactRole = businessContactRole;
+        this.businessCountry = businessCountry;
+        this.businessName = businessName;
+        this.businessPostalCode = businessPostalCode;
+        this.businessRegion = businessRegion;
+        this.city = city;
+        this.country = country;
+        this.countryOfBirth = countryOfBirth;
+        this.countryOfNationality = countryOfNationality;
+        this.createdOn = createdOn;
+        this.currency = currency;
+        this.dateOfBirth = dateOfBirth;
+        this.email = email;
+        this.employerId = employerId;
+        this.firstName = firstName;
+        this.gender = gender;
+        this.governmentId = governmentId;
+        this.governmentIdType = governmentIdType;
+        this.language = language;
+        this.lastName = lastName;
+        this.mailingAddressLine1 = mailingAddressLine1;
+        this.mailingAddressLine2 = mailingAddressLine2;
+        this.mailingAddressLine3 = mailingAddressLine3;
+        this.mailingCity = mailingCity;
+        this.mailingCountry = mailingCountry;
+        this.mailingPostalCode = mailingPostalCode;
+        this.mailingRegion = mailingRegion;
+        this.mobileNumber = mobileNumber;
+        this.mobileNumberCountry = mobileNumberCountry;
+        this.occupationTitle = occupationTitle;
+        this.occupationType = occupationType;
+        this.phoneNumber = phoneNumber;
+        this.phoneNumberCountry = phoneNumberCountry;
+        this.postalCode = postalCode;
+        this.programUserId = programUserId;
+        this.region = region;
+        this.status = status;
+        this.taxResidentStatus = taxResidentStatus;
+        this.userType = userType;
+        this.links = links;
+    }
+
+    /**
+     * Getter for Token.
+     * [Token](#/rest/models/structures/token) representing the resource
+     * @return Returns the String
+     */
+    @JsonGetter("token")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getToken() {
+        return token;
+    }
+
+    /**
+     * Setter for Token.
+     * [Token](#/rest/models/structures/token) representing the resource
+     * @param token Value for String
+     */
+    @JsonSetter("token")
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    /**
+     * Getter for AddressLine1.
+     * Address Line 1
+     * @return Returns the String
+     */
+    @JsonGetter("addressLine1")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getAddressLine1() {
+        return addressLine1;
+    }
+
+    /**
+     * Setter for AddressLine1.
+     * Address Line 1
+     * @param addressLine1 Value for String
+     */
+    @JsonSetter("addressLine1")
+    public void setAddressLine1(String addressLine1) {
+        this.addressLine1 = addressLine1;
+    }
+
+    /**
+     * Getter for AddressLine2.
+     * @return Returns the String
+     */
+    @JsonGetter("addressLine2")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getAddressLine2() {
+        return addressLine2;
+    }
+
+    /**
+     * Setter for AddressLine2.
+     * @param addressLine2 Value for String
+     */
+    @JsonSetter("addressLine2")
+    public void setAddressLine2(String addressLine2) {
+        this.addressLine2 = addressLine2;
+    }
+
+    /**
+     * Getter for AddressLine3.
+     * @return Returns the String
+     */
+    @JsonGetter("addressLine3")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getAddressLine3() {
+        return addressLine3;
+    }
+
+    /**
+     * Setter for AddressLine3.
+     * @param addressLine3 Value for String
+     */
+    @JsonSetter("addressLine3")
+    public void setAddressLine3(String addressLine3) {
+        this.addressLine3 = addressLine3;
+    }
+
+    /**
+     * Getter for BusinessAddressLine1.
+     * Business address line 1
+     * @return Returns the String
+     */
+    @JsonGetter("businessAddressLine1")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getBusinessAddressLine1() {
+        return businessAddressLine1;
+    }
+
+    /**
+     * Setter for BusinessAddressLine1.
+     * Business address line 1
+     * @param businessAddressLine1 Value for String
+     */
+    @JsonSetter("businessAddressLine1")
+    public void setBusinessAddressLine1(String businessAddressLine1) {
+        this.businessAddressLine1 = businessAddressLine1;
+    }
+
+    /**
+     * Getter for BusinessAddressLine2.
+     * Business address line 2
+     * @return Returns the String
+     */
+    @JsonGetter("businessAddressLine2")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getBusinessAddressLine2() {
+        return businessAddressLine2;
+    }
+
+    /**
+     * Setter for BusinessAddressLine2.
+     * Business address line 2
+     * @param businessAddressLine2 Value for String
+     */
+    @JsonSetter("businessAddressLine2")
+    public void setBusinessAddressLine2(String businessAddressLine2) {
+        this.businessAddressLine2 = businessAddressLine2;
+    }
+
+    /**
+     * Getter for BusinessAddressLine3.
+     * Business address line 3
+     * @return Returns the String
+     */
+    @JsonGetter("businessAddressLine3")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getBusinessAddressLine3() {
+        return businessAddressLine3;
+    }
+
+    /**
+     * Setter for BusinessAddressLine3.
+     * Business address line 3
+     * @param businessAddressLine3 Value for String
+     */
+    @JsonSetter("businessAddressLine3")
+    public void setBusinessAddressLine3(String businessAddressLine3) {
+        this.businessAddressLine3 = businessAddressLine3;
+    }
+
+    /**
+     * Getter for BusinessAddressType.
+     * Classifies the [address](#/rest/models/structures/address) type (*Residential*, *Business*,
+     * *Billing*, *Shipping*)
+     * @return Returns the Addresses
+     */
+    @JsonGetter("businessAddressType")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public Addresses getBusinessAddressType() {
+        return businessAddressType;
+    }
+
+    /**
+     * Setter for BusinessAddressType.
+     * Classifies the [address](#/rest/models/structures/address) type (*Residential*, *Business*,
+     * *Billing*, *Shipping*)
+     * @param businessAddressType Value for Addresses
+     */
+    @JsonSetter("businessAddressType")
+    public void setBusinessAddressType(Addresses businessAddressType) {
+        this.businessAddressType = businessAddressType;
+    }
+
+    /**
+     * Getter for BusinessCity.
+     * Business city
+     * @return Returns the String
+     */
+    @JsonGetter("businessCity")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getBusinessCity() {
+        return businessCity;
+    }
+
+    /**
+     * Setter for BusinessCity.
+     * Business city
+     * @param businessCity Value for String
+     */
+    @JsonSetter("businessCity")
+    public void setBusinessCity(String businessCity) {
+        this.businessCity = businessCity;
+    }
+
+    /**
+     * Getter for BusinessContactRole.
+     * Business contact role
+     * @return Returns the BusinessContactRoles
+     */
+    @JsonGetter("businessContactRole")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public BusinessContactRoles getBusinessContactRole() {
+        return businessContactRole;
+    }
+
+    /**
+     * Setter for BusinessContactRole.
+     * Business contact role
+     * @param businessContactRole Value for BusinessContactRoles
+     */
+    @JsonSetter("businessContactRole")
+    public void setBusinessContactRole(BusinessContactRoles businessContactRole) {
+        this.businessContactRole = businessContactRole;
+    }
+
+    /**
+     * Getter for BusinessCountry.
+     * Throughout the PayQuicker API, the usage of the 2-letter alpha code is used in place of the
+     * country name, e.g., for bank country or residential country. The 2-letter codes adhere to the
+     * ISO 3166-1 spec and are listed here for convenience.
+     * @return Returns the Countries
+     */
+    @JsonGetter("businessCountry")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public Countries getBusinessCountry() {
+        return businessCountry;
+    }
+
+    /**
+     * Setter for BusinessCountry.
+     * Throughout the PayQuicker API, the usage of the 2-letter alpha code is used in place of the
+     * country name, e.g., for bank country or residential country. The 2-letter codes adhere to the
+     * ISO 3166-1 spec and are listed here for convenience.
+     * @param businessCountry Value for Countries
+     */
+    @JsonSetter("businessCountry")
+    public void setBusinessCountry(Countries businessCountry) {
+        this.businessCountry = businessCountry;
+    }
+
+    /**
+     * Getter for BusinessName.
+     * Business name
+     * @return Returns the String
+     */
+    @JsonGetter("businessName")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getBusinessName() {
+        return businessName;
+    }
+
+    /**
+     * Setter for BusinessName.
+     * Business name
+     * @param businessName Value for String
+     */
+    @JsonSetter("businessName")
+    public void setBusinessName(String businessName) {
+        this.businessName = businessName;
+    }
+
+    /**
+     * Getter for BusinessPostalCode.
+     * @return Returns the String
+     */
+    @JsonGetter("businessPostalCode")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getBusinessPostalCode() {
+        return businessPostalCode;
+    }
+
+    /**
+     * Setter for BusinessPostalCode.
+     * @param businessPostalCode Value for String
+     */
+    @JsonSetter("businessPostalCode")
+    public void setBusinessPostalCode(String businessPostalCode) {
+        this.businessPostalCode = businessPostalCode;
+    }
+
+    /**
+     * Getter for BusinessRegion.
+     * Region that the business is based out of
+     * @return Returns the String
+     */
+    @JsonGetter("businessRegion")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getBusinessRegion() {
+        return businessRegion;
+    }
+
+    /**
+     * Setter for BusinessRegion.
+     * Region that the business is based out of
+     * @param businessRegion Value for String
+     */
+    @JsonSetter("businessRegion")
+    public void setBusinessRegion(String businessRegion) {
+        this.businessRegion = businessRegion;
+    }
+
+    /**
+     * Getter for City.
+     * @return Returns the String
+     */
+    @JsonGetter("city")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getCity() {
+        return city;
+    }
+
+    /**
+     * Setter for City.
+     * @param city Value for String
+     */
+    @JsonSetter("city")
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    /**
+     * Getter for Country.
+     * Throughout the PayQuicker API, the usage of the 2-letter alpha code is used in place of the
+     * country name, e.g., for bank country or residential country. The 2-letter codes adhere to the
+     * ISO 3166-1 spec and are listed here for convenience.
+     * @return Returns the Countries
+     */
+    @JsonGetter("country")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public Countries getCountry() {
+        return country;
+    }
+
+    /**
+     * Setter for Country.
+     * Throughout the PayQuicker API, the usage of the 2-letter alpha code is used in place of the
+     * country name, e.g., for bank country or residential country. The 2-letter codes adhere to the
+     * ISO 3166-1 spec and are listed here for convenience.
+     * @param country Value for Countries
+     */
+    @JsonSetter("country")
+    public void setCountry(Countries country) {
+        this.country = country;
+    }
+
+    /**
+     * Getter for CountryOfBirth.
+     * Throughout the PayQuicker API, the usage of the 2-letter alpha code is used in place of the
+     * country name, e.g., for bank country or residential country. The 2-letter codes adhere to the
+     * ISO 3166-1 spec and are listed here for convenience.
+     * @return Returns the Countries
+     */
+    @JsonGetter("countryOfBirth")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public Countries getCountryOfBirth() {
+        return countryOfBirth;
+    }
+
+    /**
+     * Setter for CountryOfBirth.
+     * Throughout the PayQuicker API, the usage of the 2-letter alpha code is used in place of the
+     * country name, e.g., for bank country or residential country. The 2-letter codes adhere to the
+     * ISO 3166-1 spec and are listed here for convenience.
+     * @param countryOfBirth Value for Countries
+     */
+    @JsonSetter("countryOfBirth")
+    public void setCountryOfBirth(Countries countryOfBirth) {
+        this.countryOfBirth = countryOfBirth;
+    }
+
+    /**
+     * Getter for CountryOfNationality.
+     * Throughout the PayQuicker API, the usage of the 2-letter alpha code is used in place of the
+     * country name, e.g., for bank country or residential country. The 2-letter codes adhere to the
+     * ISO 3166-1 spec and are listed here for convenience.
+     * @return Returns the Countries
+     */
+    @JsonGetter("countryOfNationality")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public Countries getCountryOfNationality() {
+        return countryOfNationality;
+    }
+
+    /**
+     * Setter for CountryOfNationality.
+     * Throughout the PayQuicker API, the usage of the 2-letter alpha code is used in place of the
+     * country name, e.g., for bank country or residential country. The 2-letter codes adhere to the
+     * ISO 3166-1 spec and are listed here for convenience.
+     * @param countryOfNationality Value for Countries
+     */
+    @JsonSetter("countryOfNationality")
+    public void setCountryOfNationality(Countries countryOfNationality) {
+        this.countryOfNationality = countryOfNationality;
+    }
+
+    /**
+     * Getter for CreatedOn.
+     * Time object was [created](#/rest/models/structures/created-on)
+     * @return Returns the LocalDateTime
+     */
+    @JsonGetter("createdOn")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonSerialize(using = DateTimeHelper.Rfc8601DateTimeSerializer.class)
+    public LocalDateTime getCreatedOn() {
+        return createdOn;
+    }
+
+    /**
+     * Setter for CreatedOn.
+     * Time object was [created](#/rest/models/structures/created-on)
+     * @param createdOn Value for LocalDateTime
+     */
+    @JsonSetter("createdOn")
+    @JsonDeserialize(using = DateTimeHelper.Rfc8601DateTimeDeserializer.class)
+    public void setCreatedOn(LocalDateTime createdOn) {
+        this.createdOn = createdOn;
+    }
+
+    /**
+     * Getter for Currency.
+     * [Currency code type](#/rest/models/structures/country) for the object
+     * @return Returns the Currencies
+     */
+    @JsonGetter("currency")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public Currencies getCurrency() {
+        return currency;
+    }
+
+    /**
+     * Setter for Currency.
+     * [Currency code type](#/rest/models/structures/country) for the object
+     * @param currency Value for Currencies
+     */
+    @JsonSetter("currency")
+    public void setCurrency(Currencies currency) {
+        this.currency = currency;
+    }
+
+    /**
+     * Getter for DateOfBirth.
+     * @return Returns the LocalDateTime
+     */
+    @JsonGetter("dateOfBirth")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonSerialize(using = DateTimeHelper.Rfc8601DateTimeSerializer.class)
+    public LocalDateTime getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    /**
+     * Setter for DateOfBirth.
+     * @param dateOfBirth Value for LocalDateTime
+     */
+    @JsonSetter("dateOfBirth")
+    @JsonDeserialize(using = DateTimeHelper.Rfc8601DateTimeDeserializer.class)
+    public void setDateOfBirth(LocalDateTime dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    /**
+     * Getter for Email.
+     * Contact [email address](#/rest/models/structures/email-address) for the user account for the
+     * user account
+     * @return Returns the String
+     */
+    @JsonGetter("email")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     * Setter for Email.
+     * Contact [email address](#/rest/models/structures/email-address) for the user account for the
+     * user account
+     * @param email Value for String
+     */
+    @JsonSetter("email")
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    /**
+     * Getter for EmployerId.
+     * Employer id
+     * @return Returns the String
+     */
+    @JsonGetter("employerId")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getEmployerId() {
+        return employerId;
+    }
+
+    /**
+     * Setter for EmployerId.
+     * Employer id
+     * @param employerId Value for String
+     */
+    @JsonSetter("employerId")
+    public void setEmployerId(String employerId) {
+        this.employerId = employerId;
+    }
+
+    /**
+     * Getter for FirstName.
+     * First name
+     * @return Returns the String
+     */
+    @JsonGetter("firstName")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getFirstName() {
+        return firstName;
+    }
+
+    /**
+     * Setter for FirstName.
+     * First name
+     * @param firstName Value for String
+     */
+    @JsonSetter("firstName")
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    /**
+     * Getter for Gender.
+     * [Gender](#/rest/models/structures/gender) as a user identifies
+     * @return Returns the Genders
+     */
+    @JsonGetter("gender")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public Genders getGender() {
+        return gender;
+    }
+
+    /**
+     * Setter for Gender.
+     * [Gender](#/rest/models/structures/gender) as a user identifies
+     * @param gender Value for Genders
+     */
+    @JsonSetter("gender")
+    public void setGender(Genders gender) {
+        this.gender = gender;
+    }
+
+    /**
+     * Getter for GovernmentId.
+     * @return Returns the String
+     */
+    @JsonGetter("governmentId")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getGovernmentId() {
+        return governmentId;
+    }
+
+    /**
+     * Setter for GovernmentId.
+     * @param governmentId Value for String
+     */
+    @JsonSetter("governmentId")
+    public void setGovernmentId(String governmentId) {
+        this.governmentId = governmentId;
+    }
+
+    /**
+     * Getter for GovernmentIdType.
+     * Indicates the type of ID submitted for user verification purposes.
+     * @return Returns the GovernmentIds
+     */
+    @JsonGetter("governmentIdType")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public GovernmentIds getGovernmentIdType() {
+        return governmentIdType;
+    }
+
+    /**
+     * Setter for GovernmentIdType.
+     * Indicates the type of ID submitted for user verification purposes.
+     * @param governmentIdType Value for GovernmentIds
+     */
+    @JsonSetter("governmentIdType")
+    public void setGovernmentIdType(GovernmentIds governmentIdType) {
+        this.governmentIdType = governmentIdType;
+    }
+
+    /**
+     * Getter for Language.
+     * The [Language](#/rest/models/structures/language) type in IETF's BCP 47 format
+     * @return Returns the Languages
+     */
+    @JsonGetter("language")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public Languages getLanguage() {
+        return language;
+    }
+
+    /**
+     * Setter for Language.
+     * The [Language](#/rest/models/structures/language) type in IETF's BCP 47 format
+     * @param language Value for Languages
+     */
+    @JsonSetter("language")
+    public void setLanguage(Languages language) {
+        this.language = language;
+    }
+
+    /**
+     * Getter for LastName.
+     * Last name
+     * @return Returns the String
+     */
+    @JsonGetter("lastName")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getLastName() {
+        return lastName;
+    }
+
+    /**
+     * Setter for LastName.
+     * Last name
+     * @param lastName Value for String
+     */
+    @JsonSetter("lastName")
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    /**
+     * Getter for MailingAddressLine1.
+     * @return Returns the String
+     */
+    @JsonGetter("mailingAddressLine1")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getMailingAddressLine1() {
+        return mailingAddressLine1;
+    }
+
+    /**
+     * Setter for MailingAddressLine1.
+     * @param mailingAddressLine1 Value for String
+     */
+    @JsonSetter("mailingAddressLine1")
+    public void setMailingAddressLine1(String mailingAddressLine1) {
+        this.mailingAddressLine1 = mailingAddressLine1;
+    }
+
+    /**
+     * Getter for MailingAddressLine2.
+     * @return Returns the String
+     */
+    @JsonGetter("mailingAddressLine2")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getMailingAddressLine2() {
+        return mailingAddressLine2;
+    }
+
+    /**
+     * Setter for MailingAddressLine2.
+     * @param mailingAddressLine2 Value for String
+     */
+    @JsonSetter("mailingAddressLine2")
+    public void setMailingAddressLine2(String mailingAddressLine2) {
+        this.mailingAddressLine2 = mailingAddressLine2;
+    }
+
+    /**
+     * Getter for MailingAddressLine3.
+     * @return Returns the String
+     */
+    @JsonGetter("mailingAddressLine3")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getMailingAddressLine3() {
+        return mailingAddressLine3;
+    }
+
+    /**
+     * Setter for MailingAddressLine3.
+     * @param mailingAddressLine3 Value for String
+     */
+    @JsonSetter("mailingAddressLine3")
+    public void setMailingAddressLine3(String mailingAddressLine3) {
+        this.mailingAddressLine3 = mailingAddressLine3;
+    }
+
+    /**
+     * Getter for MailingCity.
+     * @return Returns the String
+     */
+    @JsonGetter("mailingCity")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getMailingCity() {
+        return mailingCity;
+    }
+
+    /**
+     * Setter for MailingCity.
+     * @param mailingCity Value for String
+     */
+    @JsonSetter("mailingCity")
+    public void setMailingCity(String mailingCity) {
+        this.mailingCity = mailingCity;
+    }
+
+    /**
+     * Getter for MailingCountry.
+     * Throughout the PayQuicker API, the usage of the 2-letter alpha code is used in place of the
+     * country name, e.g., for bank country or residential country. The 2-letter codes adhere to the
+     * ISO 3166-1 spec and are listed here for convenience.
+     * @return Returns the Countries
+     */
+    @JsonGetter("mailingCountry")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public Countries getMailingCountry() {
+        return mailingCountry;
+    }
+
+    /**
+     * Setter for MailingCountry.
+     * Throughout the PayQuicker API, the usage of the 2-letter alpha code is used in place of the
+     * country name, e.g., for bank country or residential country. The 2-letter codes adhere to the
+     * ISO 3166-1 spec and are listed here for convenience.
+     * @param mailingCountry Value for Countries
+     */
+    @JsonSetter("mailingCountry")
+    public void setMailingCountry(Countries mailingCountry) {
+        this.mailingCountry = mailingCountry;
+    }
+
+    /**
+     * Getter for MailingPostalCode.
+     * @return Returns the String
+     */
+    @JsonGetter("mailingPostalCode")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getMailingPostalCode() {
+        return mailingPostalCode;
+    }
+
+    /**
+     * Setter for MailingPostalCode.
+     * @param mailingPostalCode Value for String
+     */
+    @JsonSetter("mailingPostalCode")
+    public void setMailingPostalCode(String mailingPostalCode) {
+        this.mailingPostalCode = mailingPostalCode;
+    }
+
+    /**
+     * Getter for MailingRegion.
+     * @return Returns the String
+     */
+    @JsonGetter("mailingRegion")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getMailingRegion() {
+        return mailingRegion;
+    }
+
+    /**
+     * Setter for MailingRegion.
+     * @param mailingRegion Value for String
+     */
+    @JsonSetter("mailingRegion")
+    public void setMailingRegion(String mailingRegion) {
+        this.mailingRegion = mailingRegion;
+    }
+
+    /**
+     * Getter for MobileNumber.
+     * @return Returns the String
+     */
+    @JsonGetter("mobileNumber")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+
+    /**
+     * Setter for MobileNumber.
+     * @param mobileNumber Value for String
+     */
+    @JsonSetter("mobileNumber")
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
+
+    /**
+     * Getter for MobileNumberCountry.
+     * Throughout the PayQuicker API, the usage of the 2-letter alpha code is used in place of the
+     * country name, e.g., for bank country or residential country. The 2-letter codes adhere to the
+     * ISO 3166-1 spec and are listed here for convenience.
+     * @return Returns the Countries
+     */
+    @JsonGetter("mobileNumberCountry")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public Countries getMobileNumberCountry() {
+        return mobileNumberCountry;
+    }
+
+    /**
+     * Setter for MobileNumberCountry.
+     * Throughout the PayQuicker API, the usage of the 2-letter alpha code is used in place of the
+     * country name, e.g., for bank country or residential country. The 2-letter codes adhere to the
+     * ISO 3166-1 spec and are listed here for convenience.
+     * @param mobileNumberCountry Value for Countries
+     */
+    @JsonSetter("mobileNumberCountry")
+    public void setMobileNumberCountry(Countries mobileNumberCountry) {
+        this.mobileNumberCountry = mobileNumberCountry;
+    }
+
+    /**
+     * Getter for OccupationTitle.
+     * @return Returns the String
+     */
+    @JsonGetter("occupationTitle")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getOccupationTitle() {
+        return occupationTitle;
+    }
+
+    /**
+     * Setter for OccupationTitle.
+     * @param occupationTitle Value for String
+     */
+    @JsonSetter("occupationTitle")
+    public void setOccupationTitle(String occupationTitle) {
+        this.occupationTitle = occupationTitle;
+    }
+
+    /**
+     * Getter for OccupationType.
+     * [Type of occupation](#/rest/models/structures/occupation) for the user
+     * @return Returns the Occupations
+     */
+    @JsonGetter("occupationType")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public Occupations getOccupationType() {
+        return occupationType;
+    }
+
+    /**
+     * Setter for OccupationType.
+     * [Type of occupation](#/rest/models/structures/occupation) for the user
+     * @param occupationType Value for Occupations
+     */
+    @JsonSetter("occupationType")
+    public void setOccupationType(Occupations occupationType) {
+        this.occupationType = occupationType;
+    }
+
+    /**
+     * Getter for PhoneNumber.
+     * @return Returns the String
+     */
+    @JsonGetter("phoneNumber")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    /**
+     * Setter for PhoneNumber.
+     * @param phoneNumber Value for String
+     */
+    @JsonSetter("phoneNumber")
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    /**
+     * Getter for PhoneNumberCountry.
+     * Throughout the PayQuicker API, the usage of the 2-letter alpha code is used in place of the
+     * country name, e.g., for bank country or residential country. The 2-letter codes adhere to the
+     * ISO 3166-1 spec and are listed here for convenience.
+     * @return Returns the Countries
+     */
+    @JsonGetter("phoneNumberCountry")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public Countries getPhoneNumberCountry() {
+        return phoneNumberCountry;
+    }
+
+    /**
+     * Setter for PhoneNumberCountry.
+     * Throughout the PayQuicker API, the usage of the 2-letter alpha code is used in place of the
+     * country name, e.g., for bank country or residential country. The 2-letter codes adhere to the
+     * ISO 3166-1 spec and are listed here for convenience.
+     * @param phoneNumberCountry Value for Countries
+     */
+    @JsonSetter("phoneNumberCountry")
+    public void setPhoneNumberCountry(Countries phoneNumberCountry) {
+        this.phoneNumberCountry = phoneNumberCountry;
+    }
+
+    /**
+     * Getter for PostalCode.
+     * @return Returns the String
+     */
+    @JsonGetter("postalCode")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    /**
+     * Setter for PostalCode.
+     * @param postalCode Value for String
+     */
+    @JsonSetter("postalCode")
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
+    }
+
+    /**
+     * Getter for ProgramUserId.
+     * [Program identifier](#/rest/models/structures/program-user-id) for the user
+     * @return Returns the String
+     */
+    @JsonGetter("programUserId")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getProgramUserId() {
+        return programUserId;
+    }
+
+    /**
+     * Setter for ProgramUserId.
+     * [Program identifier](#/rest/models/structures/program-user-id) for the user
+     * @param programUserId Value for String
+     */
+    @JsonSetter("programUserId")
+    public void setProgramUserId(String programUserId) {
+        this.programUserId = programUserId;
+    }
+
+    /**
+     * Getter for Region.
+     * @return Returns the String
+     */
+    @JsonGetter("region")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String getRegion() {
+        return region;
+    }
+
+    /**
+     * Setter for Region.
+     * @param region Value for String
+     */
+    @JsonSetter("region")
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
+    /**
+     * Getter for Status.
+     * Status of the user [User status type](#/rest/models/structures/user-status)
+     * @return Returns the UserStatuses
+     */
+    @JsonGetter("status")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public UserStatuses getStatus() {
+        return status;
+    }
+
+    /**
+     * Setter for Status.
+     * Status of the user [User status type](#/rest/models/structures/user-status)
+     * @param status Value for UserStatuses
+     */
+    @JsonSetter("status")
+    public void setStatus(UserStatuses status) {
+        this.status = status;
+    }
+
+    /**
+     * Getter for TaxResidentStatus.
+     * Tax [resident status type](#/rest/models/structures/tax-resident-status)
+     * @return Returns the TaxResidentStatuses
+     */
+    @JsonGetter("taxResidentStatus")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public TaxResidentStatuses getTaxResidentStatus() {
+        return taxResidentStatus;
+    }
+
+    /**
+     * Setter for TaxResidentStatus.
+     * Tax [resident status type](#/rest/models/structures/tax-resident-status)
+     * @param taxResidentStatus Value for TaxResidentStatuses
+     */
+    @JsonSetter("taxResidentStatus")
+    public void setTaxResidentStatus(TaxResidentStatuses taxResidentStatus) {
+        this.taxResidentStatus = taxResidentStatus;
+    }
+
+    /**
+     * Getter for UserType.
+     * Account holder's profile [type](#/rest/models/structures/user-type)
+     * @return Returns the UserTypes
+     */
+    @JsonGetter("userType")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public UserTypes getUserType() {
+        return userType;
+    }
+
+    /**
+     * Setter for UserType.
+     * Account holder's profile [type](#/rest/models/structures/user-type)
+     * @param userType Value for UserTypes
+     */
+    @JsonSetter("userType")
+    public void setUserType(UserTypes userType) {
+        this.userType = userType;
+    }
+
+    /**
+     * Getter for Links.
+     * @return Returns the List of HateoasSelfRef
+     */
+    @JsonGetter("links")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public List<HateoasSelfRef> getLinks() {
+        return links;
+    }
+
+    /**
+     * Setter for Links.
+     * @param links Value for List of HateoasSelfRef
+     */
+    @JsonSetter("links")
+    public void setLinks(List<HateoasSelfRef> links) {
+        this.links = links;
+    }
+
+    /**
+     * Converts this UserObject into string format.
+     * @return String representation of this class
+     */
+    @Override
+    public String toString() {
+        return "UserObject [" + "token=" + token + ", addressLine1=" + addressLine1
+                + ", addressLine2=" + addressLine2 + ", addressLine3=" + addressLine3
+                + ", businessAddressLine1=" + businessAddressLine1 + ", businessAddressLine2="
+                + businessAddressLine2 + ", businessAddressLine3=" + businessAddressLine3
+                + ", businessAddressType=" + businessAddressType + ", businessCity=" + businessCity
+                + ", businessContactRole=" + businessContactRole + ", businessCountry="
+                + businessCountry + ", businessName=" + businessName + ", businessPostalCode="
+                + businessPostalCode + ", businessRegion=" + businessRegion + ", city=" + city
+                + ", country=" + country + ", countryOfBirth=" + countryOfBirth
+                + ", countryOfNationality=" + countryOfNationality + ", createdOn=" + createdOn
+                + ", currency=" + currency + ", dateOfBirth=" + dateOfBirth + ", email=" + email
+                + ", employerId=" + employerId + ", firstName=" + firstName + ", gender=" + gender
+                + ", governmentId=" + governmentId + ", governmentIdType=" + governmentIdType
+                + ", language=" + language + ", lastName=" + lastName + ", mailingAddressLine1="
+                + mailingAddressLine1 + ", mailingAddressLine2=" + mailingAddressLine2
+                + ", mailingAddressLine3=" + mailingAddressLine3 + ", mailingCity=" + mailingCity
+                + ", mailingCountry=" + mailingCountry + ", mailingPostalCode=" + mailingPostalCode
+                + ", mailingRegion=" + mailingRegion + ", mobileNumber=" + mobileNumber
+                + ", mobileNumberCountry=" + mobileNumberCountry + ", occupationTitle="
+                + occupationTitle + ", occupationType=" + occupationType + ", phoneNumber="
+                + phoneNumber + ", phoneNumberCountry=" + phoneNumberCountry + ", postalCode="
+                + postalCode + ", programUserId=" + programUserId + ", region=" + region
+                + ", status=" + status + ", taxResidentStatus=" + taxResidentStatus + ", userType="
+                + userType + ", links=" + links + ", additionalProperties="
+                + getAdditionalProperties() + "]";
+    }
+
+    /**
+     * Builds a new {@link UserObject.Builder} object.
+     * Creates the instance with the state of the current model.
+     * @return a new {@link UserObject.Builder} object
+     */
+    public Builder toBuilder() {
+        Builder builder = new Builder()
+                .token(getToken())
+                .addressLine1(getAddressLine1())
+                .addressLine2(getAddressLine2())
+                .addressLine3(getAddressLine3())
+                .businessAddressLine1(getBusinessAddressLine1())
+                .businessAddressLine2(getBusinessAddressLine2())
+                .businessAddressLine3(getBusinessAddressLine3())
+                .businessAddressType(getBusinessAddressType())
+                .businessCity(getBusinessCity())
+                .businessContactRole(getBusinessContactRole())
+                .businessCountry(getBusinessCountry())
+                .businessName(getBusinessName())
+                .businessPostalCode(getBusinessPostalCode())
+                .businessRegion(getBusinessRegion())
+                .city(getCity())
+                .country(getCountry())
+                .countryOfBirth(getCountryOfBirth())
+                .countryOfNationality(getCountryOfNationality())
+                .createdOn(getCreatedOn())
+                .currency(getCurrency())
+                .dateOfBirth(getDateOfBirth())
+                .email(getEmail())
+                .employerId(getEmployerId())
+                .firstName(getFirstName())
+                .gender(getGender())
+                .governmentId(getGovernmentId())
+                .governmentIdType(getGovernmentIdType())
+                .language(getLanguage())
+                .lastName(getLastName())
+                .mailingAddressLine1(getMailingAddressLine1())
+                .mailingAddressLine2(getMailingAddressLine2())
+                .mailingAddressLine3(getMailingAddressLine3())
+                .mailingCity(getMailingCity())
+                .mailingCountry(getMailingCountry())
+                .mailingPostalCode(getMailingPostalCode())
+                .mailingRegion(getMailingRegion())
+                .mobileNumber(getMobileNumber())
+                .mobileNumberCountry(getMobileNumberCountry())
+                .occupationTitle(getOccupationTitle())
+                .occupationType(getOccupationType())
+                .phoneNumber(getPhoneNumber())
+                .phoneNumberCountry(getPhoneNumberCountry())
+                .postalCode(getPostalCode())
+                .programUserId(getProgramUserId())
+                .region(getRegion())
+                .status(getStatus())
+                .taxResidentStatus(getTaxResidentStatus())
+                .userType(getUserType())
+                .links(getLinks());
+        return builder;
+    }
+
+    /**
+     * Class to build instances of {@link UserObject}.
+     */
+    public static class Builder {
+        private String token;
+        private String addressLine1;
+        private String addressLine2;
+        private String addressLine3;
+        private String businessAddressLine1;
+        private String businessAddressLine2;
+        private String businessAddressLine3;
+        private Addresses businessAddressType;
+        private String businessCity;
+        private BusinessContactRoles businessContactRole;
+        private Countries businessCountry;
+        private String businessName;
+        private String businessPostalCode;
+        private String businessRegion;
+        private String city;
+        private Countries country;
+        private Countries countryOfBirth;
+        private Countries countryOfNationality;
+        private LocalDateTime createdOn;
+        private Currencies currency = Currencies.USD;
+        private LocalDateTime dateOfBirth;
+        private String email;
+        private String employerId;
+        private String firstName;
+        private Genders gender;
+        private String governmentId;
+        private GovernmentIds governmentIdType;
+        private Languages language;
+        private String lastName;
+        private String mailingAddressLine1;
+        private String mailingAddressLine2;
+        private String mailingAddressLine3;
+        private String mailingCity;
+        private Countries mailingCountry;
+        private String mailingPostalCode;
+        private String mailingRegion;
+        private String mobileNumber;
+        private Countries mobileNumberCountry;
+        private String occupationTitle;
+        private Occupations occupationType;
+        private String phoneNumber;
+        private Countries phoneNumberCountry;
+        private String postalCode;
+        private String programUserId;
+        private String region;
+        private UserStatuses status;
+        private TaxResidentStatuses taxResidentStatus;
+        private UserTypes userType;
+        private List<HateoasSelfRef> links;
+
+
+
+        /**
+         * Setter for token.
+         * @param  token  String value for token.
+         * @return Builder
+         */
+        public Builder token(String token) {
+            this.token = token;
+            return this;
+        }
+
+        /**
+         * Setter for addressLine1.
+         * @param  addressLine1  String value for addressLine1.
+         * @return Builder
+         */
+        public Builder addressLine1(String addressLine1) {
+            this.addressLine1 = addressLine1;
+            return this;
+        }
+
+        /**
+         * Setter for addressLine2.
+         * @param  addressLine2  String value for addressLine2.
+         * @return Builder
+         */
+        public Builder addressLine2(String addressLine2) {
+            this.addressLine2 = addressLine2;
+            return this;
+        }
+
+        /**
+         * Setter for addressLine3.
+         * @param  addressLine3  String value for addressLine3.
+         * @return Builder
+         */
+        public Builder addressLine3(String addressLine3) {
+            this.addressLine3 = addressLine3;
+            return this;
+        }
+
+        /**
+         * Setter for businessAddressLine1.
+         * @param  businessAddressLine1  String value for businessAddressLine1.
+         * @return Builder
+         */
+        public Builder businessAddressLine1(String businessAddressLine1) {
+            this.businessAddressLine1 = businessAddressLine1;
+            return this;
+        }
+
+        /**
+         * Setter for businessAddressLine2.
+         * @param  businessAddressLine2  String value for businessAddressLine2.
+         * @return Builder
+         */
+        public Builder businessAddressLine2(String businessAddressLine2) {
+            this.businessAddressLine2 = businessAddressLine2;
+            return this;
+        }
+
+        /**
+         * Setter for businessAddressLine3.
+         * @param  businessAddressLine3  String value for businessAddressLine3.
+         * @return Builder
+         */
+        public Builder businessAddressLine3(String businessAddressLine3) {
+            this.businessAddressLine3 = businessAddressLine3;
+            return this;
+        }
+
+        /**
+         * Setter for businessAddressType.
+         * @param  businessAddressType  Addresses value for businessAddressType.
+         * @return Builder
+         */
+        public Builder businessAddressType(Addresses businessAddressType) {
+            this.businessAddressType = businessAddressType;
+            return this;
+        }
+
+        /**
+         * Setter for businessCity.
+         * @param  businessCity  String value for businessCity.
+         * @return Builder
+         */
+        public Builder businessCity(String businessCity) {
+            this.businessCity = businessCity;
+            return this;
+        }
+
+        /**
+         * Setter for businessContactRole.
+         * @param  businessContactRole  BusinessContactRoles value for businessContactRole.
+         * @return Builder
+         */
+        public Builder businessContactRole(BusinessContactRoles businessContactRole) {
+            this.businessContactRole = businessContactRole;
+            return this;
+        }
+
+        /**
+         * Setter for businessCountry.
+         * @param  businessCountry  Countries value for businessCountry.
+         * @return Builder
+         */
+        public Builder businessCountry(Countries businessCountry) {
+            this.businessCountry = businessCountry;
+            return this;
+        }
+
+        /**
+         * Setter for businessName.
+         * @param  businessName  String value for businessName.
+         * @return Builder
+         */
+        public Builder businessName(String businessName) {
+            this.businessName = businessName;
+            return this;
+        }
+
+        /**
+         * Setter for businessPostalCode.
+         * @param  businessPostalCode  String value for businessPostalCode.
+         * @return Builder
+         */
+        public Builder businessPostalCode(String businessPostalCode) {
+            this.businessPostalCode = businessPostalCode;
+            return this;
+        }
+
+        /**
+         * Setter for businessRegion.
+         * @param  businessRegion  String value for businessRegion.
+         * @return Builder
+         */
+        public Builder businessRegion(String businessRegion) {
+            this.businessRegion = businessRegion;
+            return this;
+        }
+
+        /**
+         * Setter for city.
+         * @param  city  String value for city.
+         * @return Builder
+         */
+        public Builder city(String city) {
+            this.city = city;
+            return this;
+        }
+
+        /**
+         * Setter for country.
+         * @param  country  Countries value for country.
+         * @return Builder
+         */
+        public Builder country(Countries country) {
+            this.country = country;
+            return this;
+        }
+
+        /**
+         * Setter for countryOfBirth.
+         * @param  countryOfBirth  Countries value for countryOfBirth.
+         * @return Builder
+         */
+        public Builder countryOfBirth(Countries countryOfBirth) {
+            this.countryOfBirth = countryOfBirth;
+            return this;
+        }
+
+        /**
+         * Setter for countryOfNationality.
+         * @param  countryOfNationality  Countries value for countryOfNationality.
+         * @return Builder
+         */
+        public Builder countryOfNationality(Countries countryOfNationality) {
+            this.countryOfNationality = countryOfNationality;
+            return this;
+        }
+
+        /**
+         * Setter for createdOn.
+         * @param  createdOn  LocalDateTime value for createdOn.
+         * @return Builder
+         */
+        public Builder createdOn(LocalDateTime createdOn) {
+            this.createdOn = createdOn;
+            return this;
+        }
+
+        /**
+         * Setter for currency.
+         * @param  currency  Currencies value for currency.
+         * @return Builder
+         */
+        public Builder currency(Currencies currency) {
+            this.currency = currency;
+            return this;
+        }
+
+        /**
+         * Setter for dateOfBirth.
+         * @param  dateOfBirth  LocalDateTime value for dateOfBirth.
+         * @return Builder
+         */
+        public Builder dateOfBirth(LocalDateTime dateOfBirth) {
+            this.dateOfBirth = dateOfBirth;
+            return this;
+        }
+
+        /**
+         * Setter for email.
+         * @param  email  String value for email.
+         * @return Builder
+         */
+        public Builder email(String email) {
+            this.email = email;
+            return this;
+        }
+
+        /**
+         * Setter for employerId.
+         * @param  employerId  String value for employerId.
+         * @return Builder
+         */
+        public Builder employerId(String employerId) {
+            this.employerId = employerId;
+            return this;
+        }
+
+        /**
+         * Setter for firstName.
+         * @param  firstName  String value for firstName.
+         * @return Builder
+         */
+        public Builder firstName(String firstName) {
+            this.firstName = firstName;
+            return this;
+        }
+
+        /**
+         * Setter for gender.
+         * @param  gender  Genders value for gender.
+         * @return Builder
+         */
+        public Builder gender(Genders gender) {
+            this.gender = gender;
+            return this;
+        }
+
+        /**
+         * Setter for governmentId.
+         * @param  governmentId  String value for governmentId.
+         * @return Builder
+         */
+        public Builder governmentId(String governmentId) {
+            this.governmentId = governmentId;
+            return this;
+        }
+
+        /**
+         * Setter for governmentIdType.
+         * @param  governmentIdType  GovernmentIds value for governmentIdType.
+         * @return Builder
+         */
+        public Builder governmentIdType(GovernmentIds governmentIdType) {
+            this.governmentIdType = governmentIdType;
+            return this;
+        }
+
+        /**
+         * Setter for language.
+         * @param  language  Languages value for language.
+         * @return Builder
+         */
+        public Builder language(Languages language) {
+            this.language = language;
+            return this;
+        }
+
+        /**
+         * Setter for lastName.
+         * @param  lastName  String value for lastName.
+         * @return Builder
+         */
+        public Builder lastName(String lastName) {
+            this.lastName = lastName;
+            return this;
+        }
+
+        /**
+         * Setter for mailingAddressLine1.
+         * @param  mailingAddressLine1  String value for mailingAddressLine1.
+         * @return Builder
+         */
+        public Builder mailingAddressLine1(String mailingAddressLine1) {
+            this.mailingAddressLine1 = mailingAddressLine1;
+            return this;
+        }
+
+        /**
+         * Setter for mailingAddressLine2.
+         * @param  mailingAddressLine2  String value for mailingAddressLine2.
+         * @return Builder
+         */
+        public Builder mailingAddressLine2(String mailingAddressLine2) {
+            this.mailingAddressLine2 = mailingAddressLine2;
+            return this;
+        }
+
+        /**
+         * Setter for mailingAddressLine3.
+         * @param  mailingAddressLine3  String value for mailingAddressLine3.
+         * @return Builder
+         */
+        public Builder mailingAddressLine3(String mailingAddressLine3) {
+            this.mailingAddressLine3 = mailingAddressLine3;
+            return this;
+        }
+
+        /**
+         * Setter for mailingCity.
+         * @param  mailingCity  String value for mailingCity.
+         * @return Builder
+         */
+        public Builder mailingCity(String mailingCity) {
+            this.mailingCity = mailingCity;
+            return this;
+        }
+
+        /**
+         * Setter for mailingCountry.
+         * @param  mailingCountry  Countries value for mailingCountry.
+         * @return Builder
+         */
+        public Builder mailingCountry(Countries mailingCountry) {
+            this.mailingCountry = mailingCountry;
+            return this;
+        }
+
+        /**
+         * Setter for mailingPostalCode.
+         * @param  mailingPostalCode  String value for mailingPostalCode.
+         * @return Builder
+         */
+        public Builder mailingPostalCode(String mailingPostalCode) {
+            this.mailingPostalCode = mailingPostalCode;
+            return this;
+        }
+
+        /**
+         * Setter for mailingRegion.
+         * @param  mailingRegion  String value for mailingRegion.
+         * @return Builder
+         */
+        public Builder mailingRegion(String mailingRegion) {
+            this.mailingRegion = mailingRegion;
+            return this;
+        }
+
+        /**
+         * Setter for mobileNumber.
+         * @param  mobileNumber  String value for mobileNumber.
+         * @return Builder
+         */
+        public Builder mobileNumber(String mobileNumber) {
+            this.mobileNumber = mobileNumber;
+            return this;
+        }
+
+        /**
+         * Setter for mobileNumberCountry.
+         * @param  mobileNumberCountry  Countries value for mobileNumberCountry.
+         * @return Builder
+         */
+        public Builder mobileNumberCountry(Countries mobileNumberCountry) {
+            this.mobileNumberCountry = mobileNumberCountry;
+            return this;
+        }
+
+        /**
+         * Setter for occupationTitle.
+         * @param  occupationTitle  String value for occupationTitle.
+         * @return Builder
+         */
+        public Builder occupationTitle(String occupationTitle) {
+            this.occupationTitle = occupationTitle;
+            return this;
+        }
+
+        /**
+         * Setter for occupationType.
+         * @param  occupationType  Occupations value for occupationType.
+         * @return Builder
+         */
+        public Builder occupationType(Occupations occupationType) {
+            this.occupationType = occupationType;
+            return this;
+        }
+
+        /**
+         * Setter for phoneNumber.
+         * @param  phoneNumber  String value for phoneNumber.
+         * @return Builder
+         */
+        public Builder phoneNumber(String phoneNumber) {
+            this.phoneNumber = phoneNumber;
+            return this;
+        }
+
+        /**
+         * Setter for phoneNumberCountry.
+         * @param  phoneNumberCountry  Countries value for phoneNumberCountry.
+         * @return Builder
+         */
+        public Builder phoneNumberCountry(Countries phoneNumberCountry) {
+            this.phoneNumberCountry = phoneNumberCountry;
+            return this;
+        }
+
+        /**
+         * Setter for postalCode.
+         * @param  postalCode  String value for postalCode.
+         * @return Builder
+         */
+        public Builder postalCode(String postalCode) {
+            this.postalCode = postalCode;
+            return this;
+        }
+
+        /**
+         * Setter for programUserId.
+         * @param  programUserId  String value for programUserId.
+         * @return Builder
+         */
+        public Builder programUserId(String programUserId) {
+            this.programUserId = programUserId;
+            return this;
+        }
+
+        /**
+         * Setter for region.
+         * @param  region  String value for region.
+         * @return Builder
+         */
+        public Builder region(String region) {
+            this.region = region;
+            return this;
+        }
+
+        /**
+         * Setter for status.
+         * @param  status  UserStatuses value for status.
+         * @return Builder
+         */
+        public Builder status(UserStatuses status) {
+            this.status = status;
+            return this;
+        }
+
+        /**
+         * Setter for taxResidentStatus.
+         * @param  taxResidentStatus  TaxResidentStatuses value for taxResidentStatus.
+         * @return Builder
+         */
+        public Builder taxResidentStatus(TaxResidentStatuses taxResidentStatus) {
+            this.taxResidentStatus = taxResidentStatus;
+            return this;
+        }
+
+        /**
+         * Setter for userType.
+         * @param  userType  UserTypes value for userType.
+         * @return Builder
+         */
+        public Builder userType(UserTypes userType) {
+            this.userType = userType;
+            return this;
+        }
+
+        /**
+         * Setter for links.
+         * @param  links  List of HateoasSelfRef value for links.
+         * @return Builder
+         */
+        public Builder links(List<HateoasSelfRef> links) {
+            this.links = links;
+            return this;
+        }
+
+        /**
+         * Builds a new {@link UserObject} object using the set fields.
+         * @return {@link UserObject}
+         */
+        public UserObject build() {
+            return new UserObject(token, addressLine1, addressLine2, addressLine3,
+                    businessAddressLine1, businessAddressLine2, businessAddressLine3,
+                    businessAddressType, businessCity, businessContactRole, businessCountry,
+                    businessName, businessPostalCode, businessRegion, city, country, countryOfBirth,
+                    countryOfNationality, createdOn, currency, dateOfBirth, email, employerId,
+                    firstName, gender, governmentId, governmentIdType, language, lastName,
+                    mailingAddressLine1, mailingAddressLine2, mailingAddressLine3, mailingCity,
+                    mailingCountry, mailingPostalCode, mailingRegion, mobileNumber,
+                    mobileNumberCountry, occupationTitle, occupationType, phoneNumber,
+                    phoneNumberCountry, postalCode, programUserId, region, status,
+                    taxResidentStatus, userType, links);
+        }
+    }
+}

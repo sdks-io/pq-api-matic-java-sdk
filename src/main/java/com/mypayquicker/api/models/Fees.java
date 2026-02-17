@@ -1,0 +1,268 @@
+/*
+ * PayQuickerSDK
+ *
+ * This file was automatically generated for PayQuicker by APIMATIC v3.0 ( https://www.apimatic.io ).
+ */
+
+package com.mypayquicker.api.models;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.TreeMap;
+
+
+/**
+ * Fees to be used.
+ */
+public enum Fees {
+    BANK_TRANSFER_REVERSAL_STOP_NOC,
+
+    PAPER_CHECK_STOP,
+
+    INSTANT_PAYMENT,
+
+    ACCOUNT_DIRECT_DEPOSIT,
+
+    INBOUND_WIRE,
+
+    PLASTIC_CARD_PURCHASE_DECLINED,
+
+    ATM_DECLINED,
+
+    CLEAR_NEGATIVE_BALANCE,
+
+    PLASTIC_CARD_ISSUANCE,
+
+    PLASTIC_CARD_REPLACEMENT_FRAUD,
+
+    PLASTIC_CARD_REPLACEMENT_LOST_OR_STOLEN,
+
+    PLASTIC_CARD_REPLACEMENT_EXPIRED,
+
+    BANK_TRANSFER_CURRENCY_CONVERSION,
+
+    PAPER_CHECK_ISSUANCE_CURRENCY_CONVERSION,
+
+    PLASTIC_CARD_PIN_PURCHASE,
+
+    FOREIGN_EXCHANGE_CONVERSION,
+
+    ATM_CASH_WITHDRAWAL_REMOTE_CURRENCY_FOREIGN_EXCHANGE,
+
+    PAPER_STATEMENT,
+
+    BANK_TRANSFER,
+
+    PAPER_CHECK_ISSUANCE,
+
+    ACCOUNT_ENROLLMENT,
+
+    MONTHLY_MAINTENANCE_INACTIVE_ACCOUNT,
+
+    MONTHLY_MAINTENANCE_ACTIVE_ACCOUNT,
+
+    ACCOUNT_CLOSURE,
+
+    PLASTIC_CARD_PURCHASE_OUTSIDE_USA,
+
+    EXTERNAL_INITIATED_BANK_TRANSFER,
+
+    CO_BRANDED_ACCOUNT_PROCESSING_ORDER_FEE,
+
+    ATM_CASH_WITHDRAWAL_FEE_LOCAL_CURRENCY,
+
+    ATM_CASH_WITHDRAWAL_FEE_OUTSIDE_CURRENCY,
+
+    ATM_BALANCE_INQUIRY_FEE,
+
+    BANK_TELLER_CASH_WITHDRAWAL_FEE,
+
+    BANK_TELLER_CASH_WITHDRAWAL_DECLINE_FEE,
+
+    COMPANY_BULK_MONTHLY_FEE,
+
+    PAYMENT_ESCHEATMENT_FEE,
+
+    SPENDBACK_PROCESSING_FEE,
+
+    VIRTUAL_PLASTIC_CARD_REPLACEMENT_FRAUD,
+
+    VIRTUAL_PLASTIC_CARD_REPLACEMENT_LOST_OR_STOLEN,
+
+    VIRTUAL_PLASTIC_CARD_REPLACEMENT_EXPIRED,
+
+    REVERSE_FEE,
+
+    LOAD_SERVICE_FEE,
+
+    PAYMENT_SUBSCRIPTION_FEE,
+
+    AUTO_ACH_FEE,
+
+    UNDEFINED,
+
+    BULK_MONTHLY_FEE,
+
+    VIRTUAL_PLASTIC_CARD_ISSUANCE,
+
+    ELECTRONIC_WALLET_TRANSFER;
+
+
+    private static TreeMap<String, Fees> valueMap = new TreeMap<>();
+    private String value;
+
+    static {
+        BANK_TRANSFER_REVERSAL_STOP_NOC.value = "BANK_TRANSFER_REVERSAL_STOP_NOC";
+        PAPER_CHECK_STOP.value = "PAPER_CHECK_STOP";
+        INSTANT_PAYMENT.value = "INSTANT_PAYMENT";
+        ACCOUNT_DIRECT_DEPOSIT.value = "ACCOUNT_DIRECT_DEPOSIT";
+        INBOUND_WIRE.value = "INBOUND_WIRE";
+        PLASTIC_CARD_PURCHASE_DECLINED.value = "PLASTIC_CARD_PURCHASE_DECLINED";
+        ATM_DECLINED.value = "ATM_DECLINED";
+        CLEAR_NEGATIVE_BALANCE.value = "CLEAR_NEGATIVE_BALANCE";
+        PLASTIC_CARD_ISSUANCE.value = "PLASTIC_CARD_ISSUANCE";
+        PLASTIC_CARD_REPLACEMENT_FRAUD.value = "PLASTIC_CARD_REPLACEMENT_FRAUD";
+        PLASTIC_CARD_REPLACEMENT_LOST_OR_STOLEN.value = "PLASTIC_CARD_REPLACEMENT_LOST_OR_STOLEN";
+        PLASTIC_CARD_REPLACEMENT_EXPIRED.value = "PLASTIC_CARD_REPLACEMENT_EXPIRED";
+        BANK_TRANSFER_CURRENCY_CONVERSION.value = "BANK_TRANSFER_CURRENCY_CONVERSION";
+        PAPER_CHECK_ISSUANCE_CURRENCY_CONVERSION.value = "PAPER_CHECK_ISSUANCE_CURRENCY_CONVERSION";
+        PLASTIC_CARD_PIN_PURCHASE.value = "PLASTIC_CARD_PIN_PURCHASE";
+        FOREIGN_EXCHANGE_CONVERSION.value = "FOREIGN_EXCHANGE_CONVERSION";
+        ATM_CASH_WITHDRAWAL_REMOTE_CURRENCY_FOREIGN_EXCHANGE.value = "ATM_CASH_WITHDRAWAL_REMOTE_CURRENCY_FOREIGN_EXCHANGE";
+        PAPER_STATEMENT.value = "PAPER_STATEMENT";
+        BANK_TRANSFER.value = "BANK_TRANSFER";
+        PAPER_CHECK_ISSUANCE.value = "PAPER_CHECK_ISSUANCE";
+        ACCOUNT_ENROLLMENT.value = "ACCOUNT_ENROLLMENT";
+        MONTHLY_MAINTENANCE_INACTIVE_ACCOUNT.value = "MONTHLY_MAINTENANCE_INACTIVE_ACCOUNT";
+        MONTHLY_MAINTENANCE_ACTIVE_ACCOUNT.value = "MONTHLY_MAINTENANCE_ACTIVE_ACCOUNT";
+        ACCOUNT_CLOSURE.value = "ACCOUNT_CLOSURE";
+        PLASTIC_CARD_PURCHASE_OUTSIDE_USA.value = "PLASTIC_CARD_PURCHASE_OUTSIDE_USA";
+        EXTERNAL_INITIATED_BANK_TRANSFER.value = "EXTERNAL_INITIATED_BANK_TRANSFER";
+        CO_BRANDED_ACCOUNT_PROCESSING_ORDER_FEE.value = "CO_BRANDED_ACCOUNT_PROCESSING_ORDER_FEE";
+        ATM_CASH_WITHDRAWAL_FEE_LOCAL_CURRENCY.value = "ATM_CASH_WITHDRAWAL_FEE_LOCAL_CURRENCY";
+        ATM_CASH_WITHDRAWAL_FEE_OUTSIDE_CURRENCY.value = "ATM_CASH_WITHDRAWAL_FEE_OUTSIDE_CURRENCY";
+        ATM_BALANCE_INQUIRY_FEE.value = "ATM_BALANCE_INQUIRY_FEE";
+        BANK_TELLER_CASH_WITHDRAWAL_FEE.value = "BANK_TELLER_CASH_WITHDRAWAL_FEE";
+        BANK_TELLER_CASH_WITHDRAWAL_DECLINE_FEE.value = "BANK_TELLER_CASH_WITHDRAWAL_DECLINE_FEE";
+        COMPANY_BULK_MONTHLY_FEE.value = "COMPANY_BULK_MONTHLY_FEE";
+        PAYMENT_ESCHEATMENT_FEE.value = "PAYMENT_ESCHEATMENT_FEE";
+        SPENDBACK_PROCESSING_FEE.value = "SPENDBACK_PROCESSING_FEE";
+        VIRTUAL_PLASTIC_CARD_REPLACEMENT_FRAUD.value = "VIRTUAL_PLASTIC_CARD_REPLACEMENT_FRAUD";
+        VIRTUAL_PLASTIC_CARD_REPLACEMENT_LOST_OR_STOLEN.value = "VIRTUAL_PLASTIC_CARD_REPLACEMENT_LOST_OR_STOLEN";
+        VIRTUAL_PLASTIC_CARD_REPLACEMENT_EXPIRED.value = "VIRTUAL_PLASTIC_CARD_REPLACEMENT_EXPIRED";
+        REVERSE_FEE.value = "REVERSE_FEE";
+        LOAD_SERVICE_FEE.value = "LOAD_SERVICE_FEE";
+        PAYMENT_SUBSCRIPTION_FEE.value = "PAYMENT_SUBSCRIPTION_FEE";
+        AUTO_ACH_FEE.value = "AUTO_ACH_FEE";
+        UNDEFINED.value = "UNDEFINED";
+        BULK_MONTHLY_FEE.value = "BULK_MONTHLY_FEE";
+        VIRTUAL_PLASTIC_CARD_ISSUANCE.value = "VIRTUAL_PLASTIC_CARD_ISSUANCE";
+        ELECTRONIC_WALLET_TRANSFER.value = "ELECTRONIC_WALLET_TRANSFER";
+
+        valueMap.put("BANK_TRANSFER_REVERSAL_STOP_NOC", BANK_TRANSFER_REVERSAL_STOP_NOC);
+        valueMap.put("PAPER_CHECK_STOP", PAPER_CHECK_STOP);
+        valueMap.put("INSTANT_PAYMENT", INSTANT_PAYMENT);
+        valueMap.put("ACCOUNT_DIRECT_DEPOSIT", ACCOUNT_DIRECT_DEPOSIT);
+        valueMap.put("INBOUND_WIRE", INBOUND_WIRE);
+        valueMap.put("PLASTIC_CARD_PURCHASE_DECLINED", PLASTIC_CARD_PURCHASE_DECLINED);
+        valueMap.put("ATM_DECLINED", ATM_DECLINED);
+        valueMap.put("CLEAR_NEGATIVE_BALANCE", CLEAR_NEGATIVE_BALANCE);
+        valueMap.put("PLASTIC_CARD_ISSUANCE", PLASTIC_CARD_ISSUANCE);
+        valueMap.put("PLASTIC_CARD_REPLACEMENT_FRAUD", PLASTIC_CARD_REPLACEMENT_FRAUD);
+        valueMap.put("PLASTIC_CARD_REPLACEMENT_LOST_OR_STOLEN", PLASTIC_CARD_REPLACEMENT_LOST_OR_STOLEN);
+        valueMap.put("PLASTIC_CARD_REPLACEMENT_EXPIRED", PLASTIC_CARD_REPLACEMENT_EXPIRED);
+        valueMap.put("BANK_TRANSFER_CURRENCY_CONVERSION", BANK_TRANSFER_CURRENCY_CONVERSION);
+        valueMap.put("PAPER_CHECK_ISSUANCE_CURRENCY_CONVERSION", PAPER_CHECK_ISSUANCE_CURRENCY_CONVERSION);
+        valueMap.put("PLASTIC_CARD_PIN_PURCHASE", PLASTIC_CARD_PIN_PURCHASE);
+        valueMap.put("FOREIGN_EXCHANGE_CONVERSION", FOREIGN_EXCHANGE_CONVERSION);
+        valueMap.put("ATM_CASH_WITHDRAWAL_REMOTE_CURRENCY_FOREIGN_EXCHANGE", ATM_CASH_WITHDRAWAL_REMOTE_CURRENCY_FOREIGN_EXCHANGE);
+        valueMap.put("PAPER_STATEMENT", PAPER_STATEMENT);
+        valueMap.put("BANK_TRANSFER", BANK_TRANSFER);
+        valueMap.put("PAPER_CHECK_ISSUANCE", PAPER_CHECK_ISSUANCE);
+        valueMap.put("ACCOUNT_ENROLLMENT", ACCOUNT_ENROLLMENT);
+        valueMap.put("MONTHLY_MAINTENANCE_INACTIVE_ACCOUNT", MONTHLY_MAINTENANCE_INACTIVE_ACCOUNT);
+        valueMap.put("MONTHLY_MAINTENANCE_ACTIVE_ACCOUNT", MONTHLY_MAINTENANCE_ACTIVE_ACCOUNT);
+        valueMap.put("ACCOUNT_CLOSURE", ACCOUNT_CLOSURE);
+        valueMap.put("PLASTIC_CARD_PURCHASE_OUTSIDE_USA", PLASTIC_CARD_PURCHASE_OUTSIDE_USA);
+        valueMap.put("EXTERNAL_INITIATED_BANK_TRANSFER", EXTERNAL_INITIATED_BANK_TRANSFER);
+        valueMap.put("CO_BRANDED_ACCOUNT_PROCESSING_ORDER_FEE", CO_BRANDED_ACCOUNT_PROCESSING_ORDER_FEE);
+        valueMap.put("ATM_CASH_WITHDRAWAL_FEE_LOCAL_CURRENCY", ATM_CASH_WITHDRAWAL_FEE_LOCAL_CURRENCY);
+        valueMap.put("ATM_CASH_WITHDRAWAL_FEE_OUTSIDE_CURRENCY", ATM_CASH_WITHDRAWAL_FEE_OUTSIDE_CURRENCY);
+        valueMap.put("ATM_BALANCE_INQUIRY_FEE", ATM_BALANCE_INQUIRY_FEE);
+        valueMap.put("BANK_TELLER_CASH_WITHDRAWAL_FEE", BANK_TELLER_CASH_WITHDRAWAL_FEE);
+        valueMap.put("BANK_TELLER_CASH_WITHDRAWAL_DECLINE_FEE", BANK_TELLER_CASH_WITHDRAWAL_DECLINE_FEE);
+        valueMap.put("COMPANY_BULK_MONTHLY_FEE", COMPANY_BULK_MONTHLY_FEE);
+        valueMap.put("PAYMENT_ESCHEATMENT_FEE", PAYMENT_ESCHEATMENT_FEE);
+        valueMap.put("SPENDBACK_PROCESSING_FEE", SPENDBACK_PROCESSING_FEE);
+        valueMap.put("VIRTUAL_PLASTIC_CARD_REPLACEMENT_FRAUD", VIRTUAL_PLASTIC_CARD_REPLACEMENT_FRAUD);
+        valueMap.put("VIRTUAL_PLASTIC_CARD_REPLACEMENT_LOST_OR_STOLEN", VIRTUAL_PLASTIC_CARD_REPLACEMENT_LOST_OR_STOLEN);
+        valueMap.put("VIRTUAL_PLASTIC_CARD_REPLACEMENT_EXPIRED", VIRTUAL_PLASTIC_CARD_REPLACEMENT_EXPIRED);
+        valueMap.put("REVERSE_FEE", REVERSE_FEE);
+        valueMap.put("LOAD_SERVICE_FEE", LOAD_SERVICE_FEE);
+        valueMap.put("PAYMENT_SUBSCRIPTION_FEE", PAYMENT_SUBSCRIPTION_FEE);
+        valueMap.put("AUTO_ACH_FEE", AUTO_ACH_FEE);
+        valueMap.put("UNDEFINED", UNDEFINED);
+        valueMap.put("BULK_MONTHLY_FEE", BULK_MONTHLY_FEE);
+        valueMap.put("VIRTUAL_PLASTIC_CARD_ISSUANCE", VIRTUAL_PLASTIC_CARD_ISSUANCE);
+        valueMap.put("ELECTRONIC_WALLET_TRANSFER", ELECTRONIC_WALLET_TRANSFER);
+    }
+
+    /**
+     * Returns the enum member associated with the given string value.
+     * @param toConvert String value to get enum member.
+     * @return The enum member against the given string value.
+     * @throws IOException when provided value is not mapped to any enum member.
+     */
+    @JsonCreator
+    public static Fees constructFromString(String toConvert) throws IOException {
+        Fees enumValue = fromString(toConvert);
+        if (enumValue == null) {
+            throw new IOException("Unable to create enum instance with value: " + toConvert);
+        }
+        return enumValue;
+    }
+
+    /**
+     * Returns the enum member associated with the given string value.
+     * @param toConvert String value to get enum member.
+     * @return The enum member against the given string value.
+     */
+    public static Fees fromString(String toConvert) {
+        return valueMap.get(toConvert);
+    }
+
+    /**
+     * Returns the string value associated with the enum member.
+     * @return The string value against enum member.
+     */
+    @JsonValue
+    public String value() {
+        return value;
+    }
+        
+    /**
+     * Get string representation of this enum.
+     */
+    @Override
+    public String toString() {
+        return value.toString();
+    }
+
+    /**
+     * Convert list of Fees values to list of string values.
+     * @param toConvert The list of Fees values to convert.
+     * @return List of representative string values.
+     */
+    public static List<String> toValue(List<Fees> toConvert) {
+        if (toConvert == null) {
+            return null;
+        }
+        List<String> convertedValues = new ArrayList<>();
+        for (Fees enumValue : toConvert) {
+            convertedValues.add(enumValue.value);
+        }
+        return convertedValues;
+    }
+} 
